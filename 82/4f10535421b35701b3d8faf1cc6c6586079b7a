@@ -1,0 +1,19 @@
+herdr-plugin.toml
+  s_0dba166e8ea378::t_fbea7f8653c0a6 1-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "824f10535421b35701b3d8faf1cc6c6586079b7a",
+  "prompts": {},
+  "sessions": {
+    "s_0dba166e8ea378": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "019f801b-fff7-7480-a87c-13c29a9997af",
+        "model": "anthropic/claude-fable-5"
+      },
+      "human_author": "slava <slava@crexi.com>"
+    }
+  }
+}
