@@ -1,0 +1,10 @@
+id = "crexi.worktree-copy"
+name = "Worktree Copy"
+version = "0.2.0"
+min_herdr_version = "0.7.0"
+description = "Copy and symlink paths from .worktree-copy after Herdr creates a worktree"
+platforms = ["linux", "macos"]
+
+[[events]]
+on = "worktree.created"
+command = ["sh", "on-worktree-created.sh"]
