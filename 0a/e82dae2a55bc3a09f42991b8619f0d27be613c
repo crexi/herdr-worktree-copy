@@ -1,0 +1,40 @@
+herdr-plugin.toml
+  s_0dba166e8ea378::t_fbea7f8653c0a6 3,5
+worktree-copy.sh
+  s_a4578a08cf5e74::t_9c95d238dae99b 1-94
+README.md
+  s_a4578a08cf5e74::t_78292aa5ec17dc 3,5,7-16,19-20,23,25-35,61-66,69-70,80
+install-git-hook.sh
+  s_a4578a08cf5e74::t_9efd97f789d63b 1-45
+hooks/post-checkout
+  s_a4578a08cf5e74::t_683680ca002f11 1-17
+on-worktree-created.sh
+  s_a4578a08cf5e74::t_6bb8c764c31b1f 2,10
+tests/run.sh
+  s_a4578a08cf5e74::t_c55e1f4a8b7ed1 1-48,50-57,60-71
+  s_a4578a08cf5e74::t_85c6ef040a1536 49,58-59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "0ae82dae2a55bc3a09f42991b8619f0d27be613c",
+  "prompts": {},
+  "sessions": {
+    "s_0dba166e8ea378": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "019f801b-fff7-7480-a87c-13c29a9997af",
+        "model": "anthropic/claude-fable-5"
+      },
+      "human_author": "slava <slava@crexi.com>"
+    },
+    "s_a4578a08cf5e74": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "01a1ce05-f180-77c5-ac97-89a3011099f2",
+        "model": "anthropic/claude-opus-5-5"
+      },
+      "human_author": null
+    }
+  }
+}
