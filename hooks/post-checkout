@@ -1,0 +1,17 @@
+#!/bin/sh
+# worktree-copy: applies .worktree-copy when `git worktree add` creates a linked worktree.
+
+null_ref=0000000000000000000000000000000000000000
+[ "$1" = "$null_ref" ] || exit 0
+
+git_dir="$(git rev-parse --path-format=absolute --git-dir)"
+common_dir="$(git rev-parse --path-format=absolute --git-common-dir)"
+[ "$git_dir" != "$common_dir" ] || exit 0
+
+worktree_path="$(git rev-parse --show-toplevel)"
+script="${WORKTREE_COPY_HOME:-$HOME/.local/share/worktree-copy}/worktree-copy.sh"
+
+env -u GIT_DIR -u GIT_WORK_TREE -u GIT_INDEX_FILE sh "$script" "$worktree_path" ||
+  printf 'worktree-copy: setup failed for %s\n' "$worktree_path" >&2
+
+exit 0
