@@ -1,0 +1,28 @@
+install-git-hook.sh
+  s_a4578a08cf5e74::t_9efd97f789d63b 1-45
+tests/run.sh
+  s_a4578a08cf5e74::t_85c6ef040a1536 49,58-59
+  s_a4578a08cf5e74::t_c55e1f4a8b7ed1 1-48,50-57,60-71
+hooks/post-checkout
+  s_a4578a08cf5e74::t_683680ca002f11 1-17
+worktree-copy.sh
+  s_a4578a08cf5e74::t_9c95d238dae99b 1-94
+on-worktree-created.sh
+  s_a4578a08cf5e74::t_6bb8c764c31b1f 2,10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "9d5b450478f52e9d8ea916facab2db14a210f49c",
+  "prompts": {},
+  "sessions": {
+    "s_a4578a08cf5e74": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "01a1ce05-f180-77c5-ac97-89a3011099f2",
+        "model": "anthropic/claude-opus-5-5"
+      },
+      "human_author": "slava <slava@crexi.com>"
+    }
+  }
+}
